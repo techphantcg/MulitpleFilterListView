@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.busfilter.busfileter.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/name_asc_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Asc"
+
+                />
+
+            <Button
+                android:id="@+id/name_desc_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Name Desc" />
+
+            <Button
+                android:id="@+id/age_asc_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price Asc" />
+
+            <Button
+                android:id="@+id/age_desc_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price Desc" />
+            <!--<Button-->
+            <!--android:id="@+id/asc_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ASC" />-->
+        </LinearLayout>
+
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/theatre_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_sleeping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/fab_ac"
+        android:layout_toStartOf="@+id/fab_ac"
+        android:background="#000000"
+        android:src="@drawable/bed_sleep" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:background="#000000"
+        android:src="@drawable/ac_unit_white" />
+
+</RelativeLayout>
